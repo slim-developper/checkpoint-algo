@@ -1,0 +1,25 @@
+ALGORITHM iterative_for
+VAR
+i : INTEGER;
+j : INTEGER;
+sum : INTEGER := 0;
+l : INTEGER := 0; 
+v : ARRAY;
+vo: 
+BEGIN
+l=longueur(string)
+ str=ecrire("donner une phrase qui se termine par un point")
+ si (str[l]!=".")retourner ("erreur")
+ pour i=1 jusqu'à l faire {si(string[i]=CHAR)et string[i+1]=" "
+ {sum=sum+1} fin si}fin pour
+v=["a","e","i","o","u","y"]
+pour i=1 jusqu'à l faire 
+pour j=1 jusqu'à 6 faire {si str[i]=v[j]{vo=vo+1}fin si}
+fin pour 
+fin pour
+
+
+   Ecrire ("la longueur de la phrase est:",l)
+   Ecrire("le nombre de mot est:",sum)
+   Ecrire("le nombre de voyelles est:",vo)
+END
